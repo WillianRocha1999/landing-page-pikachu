@@ -92,7 +92,10 @@ main {
     justify-content: center;
     align-items: center;
 }
-footer {
-    background-color: plum;
+.footer__text {
+    font-size: 1rem;
+    grid-column: 1/-1;
+    place-self: center;
+    color: var(--secondary-color);
     margin-bottom: 24px;
 }
