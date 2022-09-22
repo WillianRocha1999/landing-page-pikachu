@@ -69,6 +69,7 @@ main {
     color: var(--secondary-color);
     grid-column: 1/7;
     place-self: start;
+    z-index: 1;
 }
 
 .description__title {
@@ -81,7 +82,7 @@ main {
 }
 .action {
     grid-column: 7/-1;
-    place-self: center end;
+    place-self: start end;
     height: 100px;
     width: 411px;
     background-color: var(--secondary-color);
@@ -91,6 +92,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 .footer__text {
     font-size: 1rem;
@@ -98,4 +100,11 @@ main {
     place-self: center;
     color: var(--secondary-color);
     margin-bottom: 24px;
+}
+
+.pikachu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
