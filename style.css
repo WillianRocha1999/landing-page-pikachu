@@ -21,7 +21,7 @@ body {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    width: 90vh;
+    width: 90vw;
     margin: auto;
 }
 
@@ -66,8 +66,18 @@ main {
 }
 
 .description {
-    background-color: pink;
+    color: var(--secondary-color);
     grid-column: 1/7;
+    place-self: start;
+}
+
+.description__title {
+    font-size: 4rem;
+}
+
+.description__text {
+    font-size: 1.2rem;
+    width: 500px;
 }
 .action {
     background-color: black;
